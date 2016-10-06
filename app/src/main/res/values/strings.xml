@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Pitagoras</string>
+    <string name="triangulo">triangulo</string>
+    <string name="otro">otro</string>
+    <string name="rectangul">rectangulo</string>
+    <string name="N90">90</string>
+    <string name="calcular">calcular</string>
+    <string name="selrectangulo">selrectangulo</string>
+    <string name="selectotro">selectotro</string>
+    <string name="seleccionatipo">Selecciona que tipo Triangulo tienes...</string>
+    <string name="preguntadatos">¿Que datos tienes?</string>
+    <string name="reset">¿Limpiar?</string>
+    <string name="botonsalir">¿Deseas Salir?</string>
+    <string name="quedar">Quedarme</string>
+    <string name="salir">Salir</string>
+    <string name="angulos">Angulos</string>
+    <string name="lados">Lados</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="C">C</string>
+    <string name="a">a</string>
+    <string name="b">b</string>
+    <string name="c">c</string>
+    <string name="Aa">a-A</string>
+    <string name="valor">¿Valor?</string>
+    <string name="noventa">90º</string>
+    <string name="mayor">Los angulos NO pueden sumar mas de 180 grados </string>
+    <string name="tipo">El tipo de Triangulo es...</string>
+    <string name="Equilatero">Es un triangulo Equilatero</string>
+    <string name="Escaleno">"Es un triangulo Escaleno"</string>
+    <string name="Isosceles">"Es un triangulo Isosceles"</string>
+    <string name="Captura">Captura</string>
+</resources>

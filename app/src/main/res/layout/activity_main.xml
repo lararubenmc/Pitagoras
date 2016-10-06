@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLigth"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:weightSum="12"
+    tools:context="com.nekitec.pitagoras.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/preguntadatos"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/captura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="numberDecimal"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/colorBlack"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/triangulo_calcular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/calcular"
+            android:src="@drawable/rectangulo"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_datos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@color/colorPrimary"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/Encabezado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Columna0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/Columnaa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/a"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorTextDark" />
+
+            <TextView
+                android:id="@+id/Columnab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/b"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorTextDark" />
+
+            <TextView
+                android:id="@+id/Columnac"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/c"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorTextDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_datos_angulos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            tools:ignore="NestedWeights">
+
+            <TextView
+                android:id="@+id/angulos"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="@string/angulos"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorTextDark"
+                tools:ignore="NestedWeights" />
+
+            <Button
+                android:id="@+id/aButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="aAngulo"
+                android:text="@string/a"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="bAngulo"
+                android:text="@string/b"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/cButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="cAngulo"
+                android:text="@string/c"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Encabezado2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Columna00"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/ColumnaA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/A"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorTextDark" />
+
+            <TextView
+                android:id="@+id/ColumnaB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/B"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorTextDark" />
+
+            <TextView
+                android:id="@+id/ColumnaC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/C"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorTextDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_datos_lados"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lados"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="@string/lados"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorTextDark" />
+
+            <Button
+                android:id="@+id/AButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ALado"
+                android:text="@string/A" />
+
+            <Button
+                android:id="@+id/BButon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="BLado"
+                android:text="@string/B" />
+
+            <Button
+                android:id="@+id/CButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="CLado"
+                android:text="@string/C" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_datos_extra"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TipoTriangulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo"
+                android:textColor="@color/colorPrimaryLigth" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
